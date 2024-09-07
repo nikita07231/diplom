@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('fon1.png');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    background-image: url('fon_menu.png');
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+    margin-top: 0;  
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.q{
+    margin-top: 30px;
+}
+.menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+button{
+    color: rgb(255, 255, 255);
+    background: orangered;
+    width: 160px;
+    height: 60px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+footer{
+    margin-top: auto;
+    background: black;
+    color: rgb(255, 255, 255);
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.right{
+    margin-right: 50px;
+}

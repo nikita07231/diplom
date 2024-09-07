@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Комплекс автомойка</title>
+    <link rel="stylesheet" href='{% static "styles/style.css" %}' />
+</head>
+<body>
+    <header class="header">
+        <ul class="menu">
+            <li><img src="{% static 'images/logo3.svg' %}" alt="лого"></li>
+            <li class="q"><a href="">ШИНОМОНТАЖ</a></li>
+            <li class="q"><a href="">АВТОМОЙКА</a></li>
+            <li class="q"><a href="">РЕМОНТ АВТО</a></li>
+            <li><a href=""><button>ЗАПИСЬ НА УСЛУГУ</button></a></li>
+        </ul>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        <ul>
+            <li><img src="{% static 'images/logo3.svg' %}" alt="лого"></li>
+            <li class="top">п. Новоорск ул. Красноуральская 2а</li>
+            <li class="right"><p>8 800 888 88 88</p>
+            <p>8 922 867 82 57</p></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,7 +1,9 @@
 from django.contrib import admin
-from .models import Block
+from .models import Wash, Tire, Service
 
 
-admin.site.register(Block)
+admin.site.register(Wash)
+admin.site.register(Tire)
+admin.site.register(Service)
 
 

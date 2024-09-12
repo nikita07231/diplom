@@ -1,0 +1,55 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1><span class="yellow">Прайс-лист грузовой шиномонтаж</span></h1>
+
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>Наименование работы</h1></th>
+			<th><h1>Размер колеса</h1></th>
+			<th><h1>цена</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for tr in tire %}
+		{% if trac %}
+	<tr>
+				<td>{{instructions}}</td>
+				<td>{{wheel_size}}</td>
+				<td>{{price}} руб</td>
+			</tr>
+		{% else %}
+
+		{% endif %}
+		{% endfor %}
+	</tbody>
+</table>
+
+<h1><span class="yellow">Прайс-лист легковой шиномонтаж</span></h1>
+
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>Наименование работы</h1></th>
+			<th><h1>Размер колеса</h1></th>
+			<th><h1>цена</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for tr in tire %}
+		{% if trac %}
+
+		{% else %}
+	<tr>
+				<td>{{instructions}}</td>
+				<td>{{wheel_size}}</td>
+				<td>{{price}} руб</td>
+			</tr>
+		{% endif %}
+	{% endfor %}
+	</tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1><span class="yellow">Прайс-лист ремонт авто</span></h1>
+
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>Наименование работы</h1></th>
+			<th><h1>цена</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for sr in service %}
+		<tr>
+			<td>{{instructions}}</td>
+			<td>{{price}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+{% endblock %}

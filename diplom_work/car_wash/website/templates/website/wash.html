@@ -1,0 +1,26 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+
+<h1><span class="yellow">Прайс-лист грузовой и легковой мойки</span></h1>
+
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>Тип кузова</h1></th>
+			<th><h1>Указания к мойке</h1></th>
+			<th><h1>цена</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for wh in wash %}
+		<tr>
+			<td>{{body_type}}</td>
+			<td>{{instructions}}</td>
+			<td>{{ price }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+{% endblock %}

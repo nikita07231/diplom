@@ -4,7 +4,16 @@ body{
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.icon{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
 
+.icon img{
+    width: 30px;
+    height: 30px;
+}
 .menu{
     display: flex;
     justify-content: space-evenly;
@@ -178,13 +187,13 @@ body {
 }
 
 .page-contain {
-  display: flex;
+  text-align: center;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   background: #E7F3F1;
   border: .75em solid white;
-  padding: 2em;
+  padding-left: 10em;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -292,4 +301,17 @@ body {
   100% {
     transform: translateX(.125em);
   }
+}
+.form{
+text-align: center;
+}
+.form__field{
+margin: 10px;
+}
+.button{
+    width: 100px;
+    height: 30px;
+}
+.result{
+    text-align: center
 }
